@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">CL — Photography</title>
+  <meta name="description" data-i18n="meta.description" content="Concert and sports photography" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__bar"></div>
+  </div>
+
+  <!-- Cursor custom (desktop) -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="header__mark">
+      <span class="serif italic">CL</span>
+    </a>
+
+    <nav class="header__nav" id="nav">
+      <a href="#index" class="nav__link" data-section="index">
+        <span class="nav__num">01</span>
+        <span class="nav__label" data-i18n="nav.index">Index</span>
+      </a>
+      <a href="#concerts" class="nav__link" data-section="concerts">
+        <span class="nav__num">02</span>
+        <span class="nav__label" data-i18n="nav.concerts">Shows</span>
+      </a>
+      <a href="#sports" class="nav__link" data-section="sports">
+        <span class="nav__num">03</span>
+        <span class="nav__label" data-i18n="nav.sports">Esportes</span>
+      </a>
+      <a href="#contact" class="nav__link" data-section="contact">
+        <span class="nav__num">04</span>
+        <span class="nav__label" data-i18n="nav.contact">Contato</span>
+      </a>
+    </nav>
+
+    <div class="header__lang">
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <button class="header__menu" id="menuToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- 01 — INDEX (HOME) -->
+    <section id="index" class="hero">
+
+      <div class="hero__grid">
+
+        <!-- Foto dominante à esquerda -->
+        <div class="hero__portrait">
+          <img
+            src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_1200/v1778211245/1000202319.jpg_luieuv.jpg"
+            alt=""
+            loading="eager"
+          />
+          <span class="hero__portrait-tag mono">portrait</span>
+        </div>
+
+        <!-- Nome à direita -->
+        <div class="hero__info">
+
+          <p class="hero__signature mono">
+            <span data-i18n="hero.signature">CL — Fotógrafo</span>
+          </p>
+
+          <h1 class="hero__name">
+            <span class="serif">Christian</span>
+            <span class="serif italic">Linhares</span>
+          </h1>
+
+          <p class="hero__location mono">
+            <span data-i18n="hero.based">RN, Brasil</span>
+            <span class="hero__location-sep">·</span>
+            <span class="hero__status-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.status">Disponível</span>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="mono" data-i18n="hero.scroll">↓ rolar</span>
+      </div>
+
+    </section>
+
+    <!-- 02 — CONCERTS -->
+    <section id="concerts" class="chapter">
+
+      <div class="chapter__head">
+        <div class="chapter__num mono">01 — <span data-i18n="chapter.cat">Categoria</span></div>
+        <h2 class="chapter__title">
+          <span class="serif">Shows</span>
+          <span class="serif italic">&amp; Espetáculos</span>
+        </h2>
+      </div>
+
+      <div class="masonry" data-gallery="concerts">
+        <figure class="masonry__item h" data-size="wide">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_1400/v1778552193/3E8A8709-Aprimorado-NR_iey9cs.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778210771/v2_d37b007a-5550-4541-8f92-b9fcd3ec98d1.jpg_avnfqg.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778462588/1000278339.jpg_bh5ogd.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v" data-size="tall">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778464647/1000122248.jpg_sqavvq.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item h">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_1200/v1778552295/v2_12cc7c6f-f3b2-4e92-8b47-70f11da7a6e6_bomkn3.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778552283/v2_931336c3-29b2-43c5-8232-e4053324410c_ajcluz.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778552244/3E8A8721-Aprimorado-NR_guhcyn.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item h">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_1200/v1778552251/3E8A9067-Aprimorado-NR_k4fnkq.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778544975/1000190436.jpg_lxi8xy.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item h" data-size="wide">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_1400/v1778464992/1000311354.jpg_lnqfuy.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778464989/1000311356.jpg_g3er1r.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778464984/1000278323.jpg_zmzdlh.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778464649/1000299646.jpg_mhp0qk.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778464985/1000311347.jpg_vljbtq.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778210771/v2_33a5f039-c986-4024-abaf-835578621962.jpg_c4pjmw.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778210771/1000190418.jpg_c0rxoh.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778552262/3E8A8792-Aprimorado-NR_fi0xxr.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778465004/1000277010.jpg_sqys9p.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778464985/1000290438.jpg_m6sna9.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item h">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_1200/v1778553925/1000277074.jpg_gqgvg1.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778553913/1000311341.jpg_vbzfhn.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778552266/3E8A8983-Aprimorado-NR_hhu255.jpg" alt="" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- 03 — SPORTS -->
+    <section id="sports" class="chapter">
+
+      <div class="chapter__head">
+        <div class="chapter__num mono">02 — <span data-i18n="chapter.cat">Categoria</span></div>
+        <h2 class="chapter__title">
+          <span class="serif">Esportes</span>
+          <span class="serif italic">&amp; Movimento</span>
+        </h2>
+      </div>
+
+      <div class="masonry" data-gallery="sports">
+        <figure class="masonry__item v" data-size="tall">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548585/v2_49ae6500-f3b5-41e4-a28e-9d238aaebbef-2_tfvupd.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548580/081A2326_v3jztw.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548632/WhatsApp_Image_2026-05-11_at_21.51.41_prhivn.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item h">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_1200/v1778548612/v2_54bed3fb-7c26-4af1-9b42-a4baf9537ba4-2_mgbexu.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v" data-size="tall">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548616/1000191696.jpg_e0xbae.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548605/1000182143.jpg_j09mfh.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548292/3E8A5965_roltqo.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548251/1000182156.jpg_rbkxbe.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548186/WhatsApp_Image_2026-05-11_at_20.17.37_fouxdm.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548169/v2_ee25e9ae-9ba9-4e55-9e46-ad79bd46ee5c_aay1mz.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548168/v2_bae5852f-e173-4014-bf5e-43acc9ab51e3_akkl9m.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548146/v2_3c7135d8-504d-4dca-b568-56e920a404bd_1.jpg_e4fnsf.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778547467/v2_688b54df-3b26-4ae4-a226-56ae7724c208_iep7gm.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778547525/WhatsApp_Image_2026-05-03_at_22.41.34_achnfg.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778547526/v2_b824015f-5a1d-4411-8116-a92f7c6f7af7_t7mxom.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778547526/v2_0b8a96b4-1969-4718-a246-e5935e8418e0_omrktz.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778547903/v2_cc006231-c06c-470c-b441-65d803432cd4_ckjm5r.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548155/v2_96d97e4c-ebad-4fab-94e5-8906503f8e7e_v1vgw1.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v" data-size="tall">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548161/WhatsApp_Image_2026-05-11_at_20.17.38_4_zsxlrb.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548246/1000179087.jpg_iho2h3.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548583/WhatsApp_Image_2026-05-11_at_20.17.34_3_ux6evm.jpg" alt="" loading="lazy" />
+        </figure>
+        <figure class="masonry__item v">
+          <img src="https://res.cloudinary.com/dqjinepws/image/upload/f_auto,q_auto,w_900/v1778548594/081A1937_ouxqzc.jpg" alt="" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 — CONTACT -->
+    <section id="contact" class="contact">
+
+      <div class="contact__head">
+        <div class="contact__num mono"> <span data-i18n="chapter.cat"></span></div>
+        <p class="contact__intro mono" data-i18n="contact.intro">— Contato</p>
+      </div>
+
+      <div class="contact__grid">
+        <a href="mailto:christian.matheus133@gmail.com" class="contact__card">
+          <span class="contact__card-label mono">Email</span>
+          <span class="contact__card-value">christian.matheus133@gmail.com</span>
+          <span class="contact__card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="https://instagram.com/christian.photos_" target="_blank" rel="noopener" class="contact__card">
+          <span class="contact__card-label mono">Instagram</span>
+          <span class="contact__card-value">@christian.photos_</span>
+          <span class="contact__card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="https://wa.me/5584998949500" target="_blank" rel="noopener" class="contact__card">
+          <span class="contact__card-label mono">WhatsApp</span>
+          <span class="contact__card-value">+55 84 9 9894 9500</span>
+          <span class="contact__card-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <span class="mono">© <span id="year"></span> · Christian Linhares</span>
+        <span class="mono">RN / Brasil</span>
+      </footer>
+
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+      <span class="mono">[ esc ]</span>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous">←</button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" id="lightboxImg" alt="" />
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next">→</button>
+    <span class="lightbox__counter mono" id="lightboxCounter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
